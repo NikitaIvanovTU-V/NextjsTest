@@ -6,12 +6,12 @@ export const Card=({icon,title,description,...props})=>{
     return(
         <StyledCardContainer>
             <StyledIconContainer>
-                <Image>
-                    src={icon.src}
-                    alt={icon.alt}
-                    width={icon.width}
-                    height={icon.height}
-                </Image>
+                <Image
+                 src={icon.src}
+                 alt={icon.alt}
+                 width={icon.width}
+                 height={icon.height}
+                />
             </StyledIconContainer>
             <StyledTextContainer>
                 <StyledTitle>{title}</StyledTitle>
