@@ -11,7 +11,7 @@ import {
   StyledCard
 } from "./elements";
 
-export const AgencySelection = ({title, description,image,cards, ...props }) => {
+export const AgencySelection = ({background, title, description, image, cards, ...props }) => {
   return (
     <StyledContainer {...props}>
       <StyledTextContainer>
@@ -31,18 +31,18 @@ export const AgencySelection = ({title, description,image,cards, ...props }) => 
       <StyledCardsContainer>
         <StyledCard
           icon={cards.one}
-          title={selectors.one.title}
-          description={selectors.one.description}
+          title={cards.one.title}
+          description={cards.one.description}
         />
         <StyledCard
           icon={cards.two}
-          title={selectors.two.title}
-          description={selectors.two.description}
+          title={cards.two.title}
+          description={cards.two.description}
         />
         <StyledCard
           icon={cards.three}
-          title={selectors.three.title}
-          description={selectors.three.description}
+          title={cards.three.title}
+          description={cards.three.description}
         />
       </StyledCardsContainer>
       </StyledMainContainer>
